@@ -62,11 +62,11 @@ function New-Protocol
 
 			if ($Client)
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Client";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Client";
 			}
 			else
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Server";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Server";
 			}
 
 			Write-Verbose "RegPath      : $($RegPath)";
@@ -142,11 +142,11 @@ function Remove-Protocol
 
 			if ($Client)
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Client";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Client";
 			}
 			else
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Server";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Server";
 			}
 
 			Write-Verbose "RegPath      : $($RegPath)";
@@ -222,11 +222,11 @@ function Enable-Protocol
 
 			if ($Client)
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Client";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Client";
 			}
 			else
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Server";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Server";
 			}
 
 			Write-Verbose "RegPath      : $($RegPath)";
@@ -304,11 +304,11 @@ function Disable-Protocol
 
 			if ($Client)
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Client";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Client";
 			}
 			else
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Server";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Server";
 			}
 
 			Write-Verbose "RegPath      : $($RegPath)";
@@ -386,11 +386,11 @@ function Get-Protocol
 
 			if ($Client)
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Client";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Client";
 			}
 			else
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Server";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Server";
 			}
 
 			Write-Verbose "RegPath      : $($RegPath)";
@@ -466,11 +466,11 @@ function Test-Protocol
 
 			if ($Client)
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Client";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Client";
 			}
 			else
 			{
-				$RegPath = "$($ProtocolsPath)\$($Protocol)\Server";
+				$RegPath = "$($Protocols[$Protocol])\$($Protocol)\Server";
 			}
 
 			Write-Verbose "RegPath      : $($RegPath)";
