@@ -12,32 +12,41 @@ function New-Protocol
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory=$false, Position=1)]
-		[switch]$Client,
-		[Parameter(Mandatory=$false, Position=2)]
-		[string]$ComputerName
 	)
 
 	DynamicParam
 	{
-		$ParameterName = 'Protocol';
-		$RuntimeParameterDictionary = New-Object System.Management.Automation.RuntimeDefinedParameterDictionary;
-		$AttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute];
-		$ParameterAttribute = New-Object System.Management.Automation.ParameterAttribute;
-		$ParameterAttribute.Mandatory = $true;
-		$ParameterAttribute.Position = 0;
-		$AttributeCollection.Add($ParameterAttribute);
-		$arrSet = $Protocols.Keys;
-		$ValidateSetAttribute = New-Object System.Management.Automation.ValidateSetAttribute($arrSet);
-		$AttributeCollection.Add($ValidateSetAttribute);
-		$RuntimeParameter = New-Object System.Management.Automation.RuntimeDefinedParameter($ParameterName, [string], $AttributeCollection);
-		$RuntimeParameterDictionary.Add($ParameterName, $RuntimeParameter);
-		return $RuntimeParameterDictionary;
+
+		$DynamicParameters = @(
+			@{
+				Name = 'Protocol'
+				Type = [array]
+				Position = 0
+				Mandatory = $true
+				ValidateSet = $Protocols.Keys
+			},
+			@{
+				Name = 'Client'
+				Type = [switch]
+				Position = 1
+				Mandatory = $false
+			},
+			@{
+				Name = 'ComputerName'
+				Type = [string]
+				Position = 2
+				Manndatory = $false
+
+			}
+		)
+		$DynamicParameters |ForEach-Object {New-Object -TypeName psobject -Property $_} |New-DynamicParameter;
 	}
 
 	begin
 	{
-		$Protocol = $PSBoundParameters[$ParameterName];
+		$Protocol = $PSBoundParameters['Protocol'];
+		$Client = $PSBoundParameters['Client'];
+		$ComputerName = $PSBoundParameters['ComputerName'];
 	}
 
 	process
@@ -83,32 +92,41 @@ function Remove-Protocol
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory=$false, Position=1)]
-		[switch]$Client,
-		[Parameter(Mandatory=$false, Position=2)]
-		[string]$ComputerName
 	)
 
 	DynamicParam
 	{
-		$ParameterName = 'Protocol';
-		$RuntimeParameterDictionary = New-Object System.Management.Automation.RuntimeDefinedParameterDictionary;
-		$AttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute];
-		$ParameterAttribute = New-Object System.Management.Automation.ParameterAttribute;
-		$ParameterAttribute.Mandatory = $true;
-		$ParameterAttribute.Position = 0;
-		$AttributeCollection.Add($ParameterAttribute);
-		$arrSet = $Protocols.Keys;
-		$ValidateSetAttribute = New-Object System.Management.Automation.ValidateSetAttribute($arrSet);
-		$AttributeCollection.Add($ValidateSetAttribute);
-		$RuntimeParameter = New-Object System.Management.Automation.RuntimeDefinedParameter($ParameterName, [string], $AttributeCollection);
-		$RuntimeParameterDictionary.Add($ParameterName, $RuntimeParameter);
-		return $RuntimeParameterDictionary;
+
+		$DynamicParameters = @(
+			@{
+				Name = 'Protocol'
+				Type = [array]
+				Position = 0
+				Mandatory = $true
+				ValidateSet = $Protocols.Keys
+			},
+			@{
+				Name = 'Client'
+				Type = [switch]
+				Position = 1
+				Mandatory = $false
+			},
+			@{
+				Name = 'ComputerName'
+				Type = [string]
+				Position = 2
+				Manndatory = $false
+
+			}
+		)
+		$DynamicParameters |ForEach-Object {New-Object -TypeName psobject -Property $_} |New-DynamicParameter;
 	}
 
 	begin
 	{
-		$Protocol = $PSBoundParameters[$ParameterName];
+		$Protocol = $PSBoundParameters['Protocol'];
+		$Client = $PSBoundParameters['Client'];
+		$ComputerName = $PSBoundParameters['ComputerName'];
 	}
 
 	process
@@ -154,32 +172,41 @@ function Enable-Protocol
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory=$false, Position=1)]
-		[switch]$Client,
-		[Parameter(Mandatory=$false, Position=2)]
-		[string]$ComputerName
 	)
 
 	DynamicParam
 	{
-		$ParameterName = 'Protocol';
-		$RuntimeParameterDictionary = New-Object System.Management.Automation.RuntimeDefinedParameterDictionary;
-		$AttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute];
-		$ParameterAttribute = New-Object System.Management.Automation.ParameterAttribute;
-		$ParameterAttribute.Mandatory = $true;
-		$ParameterAttribute.Position = 0;
-		$AttributeCollection.Add($ParameterAttribute);
-		$arrSet = $Protocols.Keys;
-		$ValidateSetAttribute = New-Object System.Management.Automation.ValidateSetAttribute($arrSet);
-		$AttributeCollection.Add($ValidateSetAttribute);
-		$RuntimeParameter = New-Object System.Management.Automation.RuntimeDefinedParameter($ParameterName, [string], $AttributeCollection);
-		$RuntimeParameterDictionary.Add($ParameterName, $RuntimeParameter);
-		return $RuntimeParameterDictionary;
+
+		$DynamicParameters = @(
+			@{
+				Name = 'Protocol'
+				Type = [array]
+				Position = 0
+				Mandatory = $true
+				ValidateSet = $Protocols.Keys
+			},
+			@{
+				Name = 'Client'
+				Type = [switch]
+				Position = 1
+				Mandatory = $false
+			},
+			@{
+				Name = 'ComputerName'
+				Type = [string]
+				Position = 2
+				Manndatory = $false
+
+			}
+		)
+		$DynamicParameters |ForEach-Object {New-Object -TypeName psobject -Property $_} |New-DynamicParameter;
 	}
 
 	begin
 	{
-		$Protocol = $PSBoundParameters[$ParameterName];
+		$Protocol = $PSBoundParameters['Protocol'];
+		$Client = $PSBoundParameters['Client'];
+		$ComputerName = $PSBoundParameters['ComputerName'];
 	}
 
 	process
@@ -227,32 +254,41 @@ function Disable-Protocol
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory=$false, Position=1)]
-		[switch]$Client,
-		[Parameter(Mandatory=$false, Position=2)]
-		[string]$ComputerName
 	)
 
 	DynamicParam
 	{
-		$ParameterName = 'Protocol';
-		$RuntimeParameterDictionary = New-Object System.Management.Automation.RuntimeDefinedParameterDictionary;
-		$AttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute];
-		$ParameterAttribute = New-Object System.Management.Automation.ParameterAttribute;
-		$ParameterAttribute.Mandatory = $true;
-		$ParameterAttribute.Position = 0;
-		$AttributeCollection.Add($ParameterAttribute);
-		$arrSet = $Protocols.Keys;
-		$ValidateSetAttribute = New-Object System.Management.Automation.ValidateSetAttribute($arrSet);
-		$AttributeCollection.Add($ValidateSetAttribute);
-		$RuntimeParameter = New-Object System.Management.Automation.RuntimeDefinedParameter($ParameterName, [string], $AttributeCollection);
-		$RuntimeParameterDictionary.Add($ParameterName, $RuntimeParameter);
-		return $RuntimeParameterDictionary;
+
+		$DynamicParameters = @(
+			@{
+				Name = 'Protocol'
+				Type = [array]
+				Position = 0
+				Mandatory = $true
+				ValidateSet = $Protocols.Keys
+			},
+			@{
+				Name = 'Client'
+				Type = [switch]
+				Position = 1
+				Mandatory = $false
+			},
+			@{
+				Name = 'ComputerName'
+				Type = [string]
+				Position = 2
+				Manndatory = $false
+
+			}
+		)
+		$DynamicParameters |ForEach-Object {New-Object -TypeName psobject -Property $_} |New-DynamicParameter;
 	}
 
 	begin
 	{
-		$Protocol = $PSBoundParameters[$ParameterName];
+		$Protocol = $PSBoundParameters['Protocol'];
+		$Client = $PSBoundParameters['Client'];
+		$ComputerName = $PSBoundParameters['ComputerName'];
 	}
 
 	process
@@ -300,32 +336,41 @@ function Get-Protocol
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory=$false, Position=1)]
-		[switch]$Client,
-		[Parameter(Mandatory=$false, Position=2)]
-		[string]$ComputerName
 	)
 
 	DynamicParam
 	{
-		$ParameterName = 'Protocol';
-		$RuntimeParameterDictionary = New-Object System.Management.Automation.RuntimeDefinedParameterDictionary;
-		$AttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute];
-		$ParameterAttribute = New-Object System.Management.Automation.ParameterAttribute;
-		$ParameterAttribute.Mandatory = $true;
-		$ParameterAttribute.Position = 0;
-		$AttributeCollection.Add($ParameterAttribute);
-		$arrSet = $Protocols.Keys;
-		$ValidateSetAttribute = New-Object System.Management.Automation.ValidateSetAttribute($arrSet);
-		$AttributeCollection.Add($ValidateSetAttribute);
-		$RuntimeParameter = New-Object System.Management.Automation.RuntimeDefinedParameter($ParameterName, [string], $AttributeCollection);
-		$RuntimeParameterDictionary.Add($ParameterName, $RuntimeParameter);
-		return $RuntimeParameterDictionary;
+
+		$DynamicParameters = @(
+			@{
+				Name = 'Protocol'
+				Type = [array]
+				Position = 0
+				Mandatory = $true
+				ValidateSet = $Protocols.Keys
+			},
+			@{
+				Name = 'Client'
+				Type = [switch]
+				Position = 1
+				Mandatory = $false
+			},
+			@{
+				Name = 'ComputerName'
+				Type = [string]
+				Position = 2
+				Manndatory = $false
+
+			}
+		)
+		$DynamicParameters |ForEach-Object {New-Object -TypeName psobject -Property $_} |New-DynamicParameter;
 	}
 
 	begin
 	{
-		$Protocol = $PSBoundParameters[$ParameterName];
+		$Protocol = $PSBoundParameters['Protocol'];
+		$Client = $PSBoundParameters['Client'];
+		$ComputerName = $PSBoundParameters['ComputerName'];
 	}
 
 	process
@@ -371,32 +416,41 @@ function Test-Protocol
 	[CmdletBinding()]
 	param
 	(
-		[Parameter(Mandatory=$false, Position=1)]
-		[switch]$Client,
-		[Parameter(Mandatory=$false, Position=2)]
-		[string]$ComputerName
 	)
 
 	DynamicParam
 	{
-		$ParameterName = 'Protocol';
-		$RuntimeParameterDictionary = New-Object System.Management.Automation.RuntimeDefinedParameterDictionary;
-		$AttributeCollection = New-Object System.Collections.ObjectModel.Collection[System.Attribute];
-		$ParameterAttribute = New-Object System.Management.Automation.ParameterAttribute;
-		$ParameterAttribute.Mandatory = $true;
-		$ParameterAttribute.Position = 0;
-		$AttributeCollection.Add($ParameterAttribute);
-		$arrSet = $Protocols.Keys;
-		$ValidateSetAttribute = New-Object System.Management.Automation.ValidateSetAttribute($arrSet);
-		$AttributeCollection.Add($ValidateSetAttribute);
-		$RuntimeParameter = New-Object System.Management.Automation.RuntimeDefinedParameter($ParameterName, [string], $AttributeCollection);
-		$RuntimeParameterDictionary.Add($ParameterName, $RuntimeParameter);
-		return $RuntimeParameterDictionary;
+
+		$DynamicParameters = @(
+			@{
+				Name = 'Protocol'
+				Type = [array]
+				Position = 0
+				Mandatory = $true
+				ValidateSet = $Protocols.Keys
+			},
+			@{
+				Name = 'Client'
+				Type = [switch]
+				Position = 1
+				Mandatory = $false
+			},
+			@{
+				Name = 'ComputerName'
+				Type = [string]
+				Position = 2
+				Manndatory = $false
+
+			}
+		)
+		$DynamicParameters |ForEach-Object {New-Object -TypeName psobject -Property $_} |New-DynamicParameter;
 	}
 
 	begin
 	{
-		$Protocol = $PSBoundParameters[$ParameterName];
+		$Protocol = $PSBoundParameters['Protocol'];
+		$Client = $PSBoundParameters['Client'];
+		$ComputerName = $PSBoundParameters['ComputerName'];
 	}
 
 	process
@@ -432,11 +486,11 @@ function Test-Protocol
 
 			if ($Result.sNames -eq $null)
 			{
-				return $false;
+				#return $false;
 			}
 			else
 			{
-				return $true;
+				#return $true;
 			}
 		}
 		catch
