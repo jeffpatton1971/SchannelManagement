@@ -430,13 +430,13 @@ function Test-Protocol
 				$Result = Get-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath;
 			}
 
-			if ($Result.ReturnValue -ne 5)
+			if ($Result.sNames -eq $null)
 			{
-				return $true;
+				return $false;
 			}
 			else
 			{
-				return $false;
+				return $true;
 			}
 		}
 		catch
