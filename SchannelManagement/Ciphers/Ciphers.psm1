@@ -55,10 +55,10 @@ function New-Cipher
 			$ErrorActionPreference = 'Stop';
 			$Error.Clear();
 
-			Write-Verbose "Protocol     : $($Protocol)";
+			Write-Verbose "Cipher       : $($Cipher)";
 			Write-Verbose "ComputerName : $($ComputerName)";
 
-			$RegPath = $Ciphers.$Cipher;
+			$RegPath = "$($Ciphers[$Cipher])\$($Cipher)";
 
 			Write-Verbose "RegPath      : $($RegPath)";
 
@@ -120,10 +120,10 @@ function Remove-Cipher
 			$ErrorActionPreference = 'Stop';
 			$Error.Clear();
 
-			Write-Verbose "Protocol     : $($Protocol)";
+			Write-Verbose "Cipher       : $($Cipher)";
 			Write-Verbose "ComputerName : $($ComputerName)";
 
-			$RegPath = $Ciphers.$Cipher;
+			$RegPath = "$($Ciphers[$Cipher])\$($Cipher)";
 
 			Write-Verbose "RegPath      : $($RegPath)";
 
@@ -185,10 +185,10 @@ function Enable-Cipher
 			$ErrorActionPreference = 'Stop';
 			$Error.Clear();
 
-			Write-Verbose "Protocol     : $($Protocol)";
+			Write-Verbose "Cipher       : $($Cipher)";
 			Write-Verbose "ComputerName : $($ComputerName)";
 
-			$RegPath = $Ciphers.$Cipher;
+			$RegPath = "$($Ciphers[$Cipher])\$($Cipher)";
 
 			Write-Verbose "RegPath      : $($RegPath)";
 
@@ -250,10 +250,10 @@ function Disable-Cipher
 			$ErrorActionPreference = 'Stop';
 			$Error.Clear();
 
-			Write-Verbose "Protocol     : $($Protocol)";
+			Write-Verbose "Cipher       : $($Cipher)";
 			Write-Verbose "ComputerName : $($ComputerName)";
 
-			$RegPath = $Ciphers.$Cipher;
+			$RegPath = "$($Ciphers[$Cipher])\$($Cipher)";
 
 			Write-Verbose "RegPath      : $($RegPath)";
 
@@ -315,10 +315,10 @@ function Get-Cipher
 			$ErrorActionPreference = 'Stop';
 			$Error.Clear();
 
-			Write-Verbose "Protocol     : $($Protocol)";
+			Write-Verbose "Cipher       : $($Cipher)";
 			Write-Verbose "ComputerName : $($ComputerName)";
 
-			$RegPath = $Ciphers.$Cipher;
+			$RegPath = "$($Ciphers[$Cipher])\$($Cipher)";
 
 			Write-Verbose "RegPath      : $($RegPath)";
 
@@ -380,10 +380,10 @@ function Test-Cipher
 			$ErrorActionPreference = 'Stop';
 			$Error.Clear();
 
-			Write-Verbose "Protocol     : $($Protocol)";
+			Write-Verbose "Cipher       : $($Cipher)";
 			Write-Verbose "ComputerName : $($ComputerName)";
 
-			$RegPath = $Ciphers.$Cipher;
+			$RegPath = "$($Ciphers[$Cipher])\$($Cipher)";
 
 			Write-Verbose "RegPath      : $($RegPath)";
 
