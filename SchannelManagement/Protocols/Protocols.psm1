@@ -486,11 +486,11 @@ function Test-Protocol
 
 			if ($Result.sNames -eq $null)
 			{
-				#return $false;
+				return $false;
 			}
 			else
 			{
-				#return $true;
+				return $true;
 			}
 		}
 		catch
