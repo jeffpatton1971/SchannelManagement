@@ -9,6 +9,8 @@ Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "Protocols", "Protocols\Prot
 EndProject
 Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "Ciphers", "Ciphers\Ciphers.pssproj", "{00FCAD87-81D9-455D-9CB6-E662EEE60FFA}"
 EndProject
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "Hashes", "Hashes\Hashes.pssproj", "{E2005D93-4D69-4B63-A5F4-DDF1D0A4A5F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{00FCAD87-81D9-455D-9CB6-E662EEE60FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00FCAD87-81D9-455D-9CB6-E662EEE60FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00FCAD87-81D9-455D-9CB6-E662EEE60FFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2005D93-4D69-4B63-A5F4-DDF1D0A4A5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2005D93-4D69-4B63-A5F4-DDF1D0A4A5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2005D93-4D69-4B63-A5F4-DDF1D0A4A5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2005D93-4D69-4B63-A5F4-DDF1D0A4A5F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
