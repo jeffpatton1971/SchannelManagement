@@ -17,6 +17,12 @@ Function        Get-Hash                                           1.0        Sc
 Function        New-Hash                                           1.0        SchannelManagement
 Function        Remove-Hash                                        1.0        SchannelManagement
 Function        Test-Hash                                          1.0        SchannelManagement
+Function        Disable-KeyExchange                                1.0        SchannelManagement
+Function        Enable-KeyExchange                                 1.0        SchannelManagement
+Function        Get-KeyExchange                                    1.0        SchannelManagement
+Function        New-KeyExchange                                    1.0        SchannelManagement
+Function        Remove-KeyExchange                                 1.0        SchannelManagement
+Function        Test-KeyExchange                                   1.0        SchannelManagement
 Function        Disable-Protocol                                   1.0        SchannelManagement
 Function        Enable-Protocol                                    1.0        SchannelManagement
 Function        Get-Protocol                                       1.0        SchannelManagement
@@ -25,8 +31,9 @@ Function        Remove-Protocol                                    1.0        Sc
 Function        Test-Protocol                                      1.0        SchannelManagement
 ```
 # Function Help
-###### Disable-Cipher
 ```
+## Disable-Cipher
+
 NAME
     Disable-Cipher
 
@@ -43,42 +50,8 @@ REMARKS
     None
 
 ```
-###### Disable-Hash
 ```
-NAME
-    Disable-Hash
-
-SYNTAX
-    Disable-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-
-```
-###### Disable-Protocol
-```
-NAME
-    Disable-Protocol
-
-SYNTAX
-    Disable-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-
-```
-###### Enable-Cipher
-```
+## Enable-Cipher
 NAME
     Enable-Cipher
 
@@ -95,42 +68,8 @@ REMARKS
     None
 
 ```
-###### Enable-Hash
 ```
-NAME
-    Enable-Hash
-
-SYNTAX
-    Enable-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-
-```
-###### Enable-Protocol
-```
-NAME
-    Enable-Protocol
-
-SYNTAX
-    Enable-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-
-```
-###### Get-Cipher
-```
+## Get-Cipher
 NAME
     Get-Cipher
 
@@ -147,42 +86,8 @@ REMARKS
     None
 
 ```
-###### Get-Hash
 ```
-NAME
-    Get-Hash
-
-SYNTAX
-    Get-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-
-```
-###### Get-Protocol
-```
-NAME
-    Get-Protocol
-
-SYNTAX
-    Get-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-
-```
-###### New-Cipher
-```
+## New-Cipher
 NAME
     New-Cipher
 
@@ -199,42 +104,8 @@ REMARKS
     None
 
 ```
-###### New-Hash
 ```
-NAME
-    New-Hash
-
-SYNTAX
-    New-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-
-```
-###### New-Protocol
-```
-NAME
-    New-Protocol
-
-SYNTAX
-    New-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-    
-```
-###### Remove-Cipher
-```
+## Remove-Cipher
 NAME
     Remove-Cipher
 
@@ -251,42 +122,8 @@ REMARKS
     None
 
 ```
-###### Remove-Hash
 ```
-NAME
-    Remove-Hash
-
-SYNTAX
-    Remove-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-
-```
-###### Remove-Protocol
-```
-NAME
-    Remove-Protocol
-
-SYNTAX
-    Remove-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
-
-
-ALIASES
-    None
-
-
-REMARKS
-    None
-
-```
-###### Test-Cipher
-```
+## Test-Cipher
 NAME
     Test-Cipher
 
@@ -303,8 +140,93 @@ REMARKS
     None
 
 ```
-###### Test-Hash
 ```
+## Disable-Hash
+NAME
+    Disable-Hash
+
+SYNTAX
+    Disable-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Enable-Hash
+NAME
+    Enable-Hash
+
+SYNTAX
+    Enable-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Get-Hash
+NAME
+    Get-Hash
+
+SYNTAX
+    Get-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## New-Hash
+NAME
+    New-Hash
+
+SYNTAX
+    New-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Remove-Hash
+NAME
+    Remove-Hash
+
+SYNTAX
+    Remove-Hash [-Hash] {SHA | MD5} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Test-Hash
 NAME
     Test-Hash
 
@@ -320,8 +242,195 @@ REMARKS
     None
 
 ```
-###### Test-Protocol
 ```
+## Disable-KeyExchange
+NAME
+    Disable-KeyExchange
+
+SYNTAX
+    Disable-KeyExchange [-KeyExchange] {Diffie-Hellman | PKCS} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Enable-KeyExchange
+NAME
+    Enable-KeyExchange
+
+SYNTAX
+    Enable-KeyExchange [-KeyExchange] {Diffie-Hellman | PKCS} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Get-KeyExchange
+NAME
+    Get-KeyExchange
+
+SYNTAX
+    Get-KeyExchange [-KeyExchange] {Diffie-Hellman | PKCS} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## New-KeyExchange
+NAME
+    New-KeyExchange
+
+SYNTAX
+    New-KeyExchange [-KeyExchange] {Diffie-Hellman | PKCS} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Remove-KeyExchange
+NAME
+    Remove-KeyExchange
+
+SYNTAX
+    Remove-KeyExchange [-KeyExchange] {Diffie-Hellman | PKCS} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Test-KeyExchange
+NAME
+    Test-KeyExchange
+
+SYNTAX
+    Test-KeyExchange [-KeyExchange] {Diffie-Hellman | PKCS} [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Disable-Protocol
+NAME
+    Disable-Protocol
+
+SYNTAX
+    Disable-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Enable-Protocol
+NAME
+    Enable-Protocol
+
+SYNTAX
+    Enable-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Get-Protocol
+NAME
+    Get-Protocol
+
+SYNTAX
+    Get-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## New-Protocol
+NAME
+    New-Protocol
+
+SYNTAX
+    New-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Remove-Protocol
+NAME
+    Remove-Protocol
+
+SYNTAX
+    Remove-Protocol [-Protocol] {TLS 1.2 | PCT 1.0 | SSL 2.0 | TLS 1.1 | SSL 3.0 | TLS 1.0} [[-Client]] [[-ComputerName] <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+```
+## Test-Protocol
 NAME
     Test-Protocol
 
@@ -335,6 +444,7 @@ ALIASES
 
 REMARKS
     None
+
 ```
 # Resources
 [Microsoft SCHANNEL Support](https://support.microsoft.com/en-us/help/245030/how-to-restrict-the-use-of-certain-cryptographic-algorithms-and-protocols-in-schannel.dll)
