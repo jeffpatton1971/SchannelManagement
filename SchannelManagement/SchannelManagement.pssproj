@@ -28,6 +28,7 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="Disable-SSLv3.ps1" />
     <Compile Include="SchannelManagement.psd1" />
     <Compile Include="SchannelManagement.psm1" />
     <Compile Include="SchannelManagement.tests.ps1" />
