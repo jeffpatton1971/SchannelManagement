@@ -6,22 +6,22 @@ A collection of modules and functions for working with SCHANNEL, protocols, ciph
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
 Function        Disable-Cipher                                     1.0        SchannelManagement
-Function        Disable-Hash                                       1.0        SchannelManagement
-Function        Disable-Protocol                                   1.0        SchannelManagement
 Function        Enable-Cipher                                      1.0        SchannelManagement
-Function        Enable-Hash                                        1.0        SchannelManagement
-Function        Enable-Protocol                                    1.0        SchannelManagement
 Function        Get-Cipher                                         1.0        SchannelManagement
-Function        Get-Hash                                           1.0        SchannelManagement
-Function        Get-Protocol                                       1.0        SchannelManagement
 Function        New-Cipher                                         1.0        SchannelManagement
-Function        New-Hash                                           1.0        SchannelManagement
-Function        New-Protocol                                       1.0        SchannelManagement
 Function        Remove-Cipher                                      1.0        SchannelManagement
-Function        Remove-Hash                                        1.0        SchannelManagement
-Function        Remove-Protocol                                    1.0        SchannelManagement
 Function        Test-Cipher                                        1.0        SchannelManagement
+Function        Disable-Hash                                       1.0        SchannelManagement
+Function        Enable-Hash                                        1.0        SchannelManagement
+Function        Get-Hash                                           1.0        SchannelManagement
+Function        New-Hash                                           1.0        SchannelManagement
+Function        Remove-Hash                                        1.0        SchannelManagement
 Function        Test-Hash                                          1.0        SchannelManagement
+Function        Disable-Protocol                                   1.0        SchannelManagement
+Function        Enable-Protocol                                    1.0        SchannelManagement
+Function        Get-Protocol                                       1.0        SchannelManagement
+Function        New-Protocol                                       1.0        SchannelManagement
+Function        Remove-Protocol                                    1.0        SchannelManagement
 Function        Test-Protocol                                      1.0        SchannelManagement
 ```
 # Function Help
