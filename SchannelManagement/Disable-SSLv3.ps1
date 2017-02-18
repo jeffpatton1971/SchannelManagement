@@ -40,6 +40,12 @@ try
 	$Hashes += 'SHA';
 
 	$Hashes |ForEach-Object {Disable-Hash -Hash $_};
+
+	$KeyExchanges = @();
+	$KeyExchanges += 'Diffie-Hellman';
+	$KeyExchanges += 'PKCS';
+
+	$KeyExchanges |ForEach-Object {Disable-KeyExchange -KeyExchange $_}
 }
 catch
 {
