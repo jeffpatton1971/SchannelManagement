@@ -31,8 +31,8 @@ Function        Remove-Protocol                                    1.0        Sc
 Function        Test-Protocol                                      1.0        SchannelManagement
 ```
 # Function Help
-```
 ## Disable-Cipher
+```
 
 NAME
     Disable-Cipher
@@ -50,8 +50,8 @@ REMARKS
     None
 
 ```
-```
 ## Enable-Cipher
+```
 NAME
     Enable-Cipher
 
@@ -68,8 +68,8 @@ REMARKS
     None
 
 ```
-```
 ## Get-Cipher
+```
 NAME
     Get-Cipher
 
@@ -86,8 +86,8 @@ REMARKS
     None
 
 ```
-```
 ## New-Cipher
+```
 NAME
     New-Cipher
 
@@ -104,8 +104,8 @@ REMARKS
     None
 
 ```
-```
 ## Remove-Cipher
+```
 NAME
     Remove-Cipher
 
@@ -122,8 +122,8 @@ REMARKS
     None
 
 ```
-```
 ## Test-Cipher
+```
 NAME
     Test-Cipher
 
@@ -140,8 +140,8 @@ REMARKS
     None
 
 ```
-```
 ## Disable-Hash
+```
 NAME
     Disable-Hash
 
@@ -157,8 +157,8 @@ REMARKS
     None
 
 ```
-```
 ## Enable-Hash
+```
 NAME
     Enable-Hash
 
@@ -174,8 +174,8 @@ REMARKS
     None
 
 ```
-```
 ## Get-Hash
+```
 NAME
     Get-Hash
 
@@ -191,8 +191,8 @@ REMARKS
     None
 
 ```
-```
 ## New-Hash
+```
 NAME
     New-Hash
 
@@ -208,8 +208,8 @@ REMARKS
     None
 
 ```
-```
 ## Remove-Hash
+```
 NAME
     Remove-Hash
 
@@ -225,8 +225,8 @@ REMARKS
     None
 
 ```
-```
 ## Test-Hash
+```
 NAME
     Test-Hash
 
@@ -242,8 +242,8 @@ REMARKS
     None
 
 ```
-```
 ## Disable-KeyExchange
+```
 NAME
     Disable-KeyExchange
 
@@ -259,8 +259,8 @@ REMARKS
     None
 
 ```
-```
 ## Enable-KeyExchange
+```
 NAME
     Enable-KeyExchange
 
@@ -276,8 +276,8 @@ REMARKS
     None
 
 ```
-```
 ## Get-KeyExchange
+```
 NAME
     Get-KeyExchange
 
@@ -293,8 +293,8 @@ REMARKS
     None
 
 ```
-```
 ## New-KeyExchange
+```
 NAME
     New-KeyExchange
 
@@ -310,8 +310,8 @@ REMARKS
     None
 
 ```
-```
 ## Remove-KeyExchange
+```
 NAME
     Remove-KeyExchange
 
@@ -327,8 +327,8 @@ REMARKS
     None
 
 ```
-```
 ## Test-KeyExchange
+```
 NAME
     Test-KeyExchange
 
@@ -344,8 +344,8 @@ REMARKS
     None
 
 ```
-```
 ## Disable-Protocol
+```
 NAME
     Disable-Protocol
 
@@ -361,8 +361,8 @@ REMARKS
     None
 
 ```
-```
 ## Enable-Protocol
+```
 NAME
     Enable-Protocol
 
@@ -378,8 +378,8 @@ REMARKS
     None
 
 ```
-```
 ## Get-Protocol
+```
 NAME
     Get-Protocol
 
@@ -395,8 +395,8 @@ REMARKS
     None
 
 ```
-```
 ## New-Protocol
+```
 NAME
     New-Protocol
 
@@ -412,8 +412,8 @@ REMARKS
     None
 
 ```
-```
 ## Remove-Protocol
+```
 NAME
     Remove-Protocol
 
@@ -429,8 +429,8 @@ REMARKS
     None
 
 ```
-```
 ## Test-Protocol
+```
 NAME
     Test-Protocol
 
