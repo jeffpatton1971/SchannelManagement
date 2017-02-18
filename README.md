@@ -11,6 +11,7 @@ Function        Get-Cipher                                         1.0        Sc
 Function        New-Cipher                                         1.0        SchannelManagement
 Function        Remove-Cipher                                      1.0        SchannelManagement
 Function        Test-Cipher                                        1.0        SchannelManagement
+Function        Set-CipherOrder                                    1.0        SchannelManagement
 Function        Disable-Hash                                       1.0        SchannelManagement
 Function        Enable-Hash                                        1.0        SchannelManagement
 Function        Get-Hash                                           1.0        SchannelManagement
@@ -130,6 +131,23 @@ NAME
 SYNTAX
     Test-Cipher [-Cipher] {NULL | Triple DES 168/168 | RC2 128/128 | AES 256/256 | RC2 56/128 | RC2 40/128 | RC4 40/128 | RC4 56/128 | RC4 64/128 | AES 128/128 | RC4 128/128 | DES 56/56} [[-ComputerName]
     <string>]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    None
+
+```
+## Set-CipherOrder
+```
+NAME
+    Set-CipherOrder
+
+SYNTAX
+    Set-CipherOrder [[-CipherList] <string[]>] [[-ComputerName] <string>]
 
 
 ALIASES
