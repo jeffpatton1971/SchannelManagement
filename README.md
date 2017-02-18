@@ -24,7 +24,8 @@ Function        Test-Cipher                                        1.0        Sc
 Function        Test-Hash                                          1.0        SchannelManagement
 Function        Test-Protocol                                      1.0        SchannelManagement
 ```
-# Function Healp
+# Function Help
+###### Disable-Cipher
 ```
 NAME
     Disable-Cipher
@@ -41,6 +42,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Disable-Hash
+```
 NAME
     Disable-Hash
 
@@ -55,6 +59,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Disable-Protocol
+```
 NAME
     Disable-Protocol
 
@@ -69,6 +76,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Enable-Cipher
+```
 NAME
     Enable-Cipher
 
@@ -84,6 +94,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Enable-Hash
+```
 NAME
     Enable-Hash
 
@@ -98,6 +111,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Enable-Protocol
+```
 NAME
     Enable-Protocol
 
@@ -112,6 +128,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Get-Cipher
+```
 NAME
     Get-Cipher
 
@@ -127,6 +146,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Get-Hash
+```
 NAME
     Get-Hash
 
@@ -141,6 +163,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Get-Protocol
+```
 NAME
     Get-Protocol
 
@@ -155,6 +180,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### New-Cipher
+```
 NAME
     New-Cipher
 
@@ -170,6 +198,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### New-Hash
+```
 NAME
     New-Hash
 
@@ -184,6 +215,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### New-Protocol
+```
 NAME
     New-Protocol
 
@@ -197,7 +231,10 @@ ALIASES
 
 REMARKS
     None
-
+    
+```
+###### Remove-Cipher
+```
 NAME
     Remove-Cipher
 
@@ -213,6 +250,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Remove-Hash
+```
 NAME
     Remove-Hash
 
@@ -227,6 +267,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Remove-Protocol
+```
 NAME
     Remove-Protocol
 
@@ -241,6 +284,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Test-Cipher
+```
 NAME
     Test-Cipher
 
@@ -256,6 +302,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Test-Hash
+```
 NAME
     Test-Hash
 
@@ -270,6 +319,9 @@ ALIASES
 REMARKS
     None
 
+```
+###### Test-Protocol
+```
 NAME
     Test-Protocol
 
