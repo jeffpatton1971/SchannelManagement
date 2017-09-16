@@ -13,6 +13,8 @@ Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "Hashes", "Hashes\Hashes.pss
 EndProject
 Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "KeyExchange", "KeyExchange\KeyExchange.pssproj", "{6E2820D3-6DEB-40C8-8735-DBA3FF198639}"
 EndProject
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "StrongAuthentication", "StrongAuthentication\StrongAuthentication.pssproj", "{9C422FE1-A5E3-47BB-B6D7-BB673EDE145A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6E2820D3-6DEB-40C8-8735-DBA3FF198639}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E2820D3-6DEB-40C8-8735-DBA3FF198639}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E2820D3-6DEB-40C8-8735-DBA3FF198639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C422FE1-A5E3-47BB-B6D7-BB673EDE145A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C422FE1-A5E3-47BB-B6D7-BB673EDE145A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C422FE1-A5E3-47BB-B6D7-BB673EDE145A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C422FE1-A5E3-47BB-B6D7-BB673EDE145A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
