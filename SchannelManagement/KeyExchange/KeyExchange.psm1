@@ -184,10 +184,18 @@ function Enable-KeyExchange
 
 			if ($ComputerName)
 			{
+				if (!(Test-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ComputerName $ComputerName))
+				{
+					New-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ComputerName $ComputerName;
+				}
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'Enabled' -ValueType DWORD -Value 4294967295 -ComputerName $ComputerName;
 			}
 			else
 			{
+				if (!(Test-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath))
+				{
+					New-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath;
+				}
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'Enabled' -ValueType DWORD -Value 4294967295;
 			}
 		}

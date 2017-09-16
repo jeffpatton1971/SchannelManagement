@@ -233,11 +233,19 @@ function Enable-Protocol
 
 			if ($ComputerName)
 			{
+				if (!(Test-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ComputerName $ComputerName))
+				{
+					New-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ComputerName $ComputerName;
+				}
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'DisabledByDefault' -ValueType DWORD -Value 1 -ComputerName $ComputerName;
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'Enabled' -ValueType DWORD -Value 0 -ComputerName $ComputerName;
 			}
 			else
 			{
+				if (!(Test-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath))
+				{
+					New-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath;
+				}
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'DisabledByDefault' -ValueType DWORD -Value 1;
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'Enabled' -ValueType DWORD -Value 0;
 			}
@@ -315,11 +323,19 @@ function Disable-Protocol
 
 			if ($ComputerName)
 			{
+				if (!(Test-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ComputerName $ComputerName))
+				{
+					New-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ComputerName $ComputerName;
+				}
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'DisabledByDefault' -ValueType DWORD -Value 1 -ComputerName $ComputerName;
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'Enabled' -ValueType DWORD -Value 0 -ComputerName $ComputerName;
 			}
 			else
 			{
+				if (!(Test-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath))
+				{
+					New-RegistryKey -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath;
+				}
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'DisabledByDefault' -ValueType DWORD -Value 1;
 				Set-RegistryValue -Hive HKEY_LOCAL_MACHINE -SubKeyName $RegPath -ValueName 'Enabled' -ValueType DWORD -Value 0;
 			}
